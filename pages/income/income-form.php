@@ -59,7 +59,7 @@ if (
     isset($_POST["voucherAmount"]) &&
     isset($_POST["voucherDetails"])
 ) {
-    $voucherDate = date("Y-m-d", strtotime($_POST['voucherDate']));
+    $voucherDate = date("Y-m-d H:i:s", strtotime($_POST['voucherDate']));
     $voucherName = $_POST['voucherName'];
     $voucherAmount = $_POST['voucherAmount'];
     $voucherDetails = $_POST['voucherDetails'];
